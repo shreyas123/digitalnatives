@@ -1,6 +1,5 @@
 FactoryGirl.define do
-  factory :user do
+  factory :role do
     name { Faker::Name.name }
-    role { FactoryGirl.create :role }
   end
 end
