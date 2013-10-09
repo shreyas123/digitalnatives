@@ -20,6 +20,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'haml-rails'
+
 group :test do 
 	gem 'rspec-rails'
 	gem 'factory_girl_rails'
