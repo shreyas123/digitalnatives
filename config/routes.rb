@@ -31,6 +31,8 @@ Digitalnatives::Application.routes.draw do
   #     resource :seller
   #   end
 
+  resources :users
+
   # Sample resource route with more complex sub-resources
   #   resources :products do
   #     resources :comments
