@@ -25,6 +25,8 @@ group :test do
 	gem 'factory_girl_rails'
 	gem 'rspec-expectations'
 	gem "shoulda-matchers"
+	gem 'faker'
+
 end
 
 gem 'jquery-rails'
