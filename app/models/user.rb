@@ -9,6 +9,8 @@ class User < ActiveRecord::Base
   has_many :user_permissions, through: :permission_users, source: :permission ,class_name: "Permission"
   has_many :role_permissions, through: :permission_roles, source: :permission, class_name: "Permission"
 
+  validates_presence_of :name
+
   def permissions
   	(user_permissions + role_permissions).uniq
   end

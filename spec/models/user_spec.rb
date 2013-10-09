@@ -7,6 +7,10 @@ describe User do
 		it { should have_many :permission_roles }
 	end
 
+	describe '#validations' do 
+		it {should validate_presence_of :name }
+	end
+
 	describe 'permissions' do 
 		let(:user) { FactoryGirl.create :user, role: role }
 		let(:role) { FactoryGirl.create :role }
