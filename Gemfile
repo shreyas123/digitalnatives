@@ -26,7 +26,7 @@ group :test do
 	gem 'rspec-expectations'
 	gem "shoulda-matchers"
 	gem 'faker'
-
+	gem 'database_cleaner'
 end
 
 gem 'jquery-rails'
