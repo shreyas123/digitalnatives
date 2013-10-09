@@ -1,0 +1,11 @@
+%div#users_list
+	- for user in @users do 
+		= user.name
+		%br
+%div#errors
+
+= simple_form_for User.new, {remote: true} do |f|
+	= f.input :name
+	= f.input :status
+	= f.input :role_id, as: :select, collection: Role.order(:name).all
+	= f.button :submit 
